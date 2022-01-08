@@ -17,15 +17,16 @@
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import { StatusBar } from "react-native";
 
 import Login from "./app/screens/Login";
 import Signup from "./app/screens/Signup";
 import Tabs from "./app/navigation/tabs";
 import colors from "./app/config/colors";
+import NewsScreen from "./app/screens/NewsScreen";
+import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 
 const Stack = createStackNavigator();
-
-//hello
 
 function MyStack() {
   return (
@@ -65,8 +66,11 @@ function MyStack() {
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <MyStack />
-    </NavigationContainer>
+    <SafeAreaProvider>
+      <StatusBar barStyle="dark-content" backgroundColor="#6a51ae" />
+      <NavigationContainer>
+        <MyStack />
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
 }
