@@ -6,7 +6,6 @@ const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Text>Home Screen</Text>
-      <Button title="Click Here" onPress={() => alert("Button Clicked!")} />
     </View>
   );
 };

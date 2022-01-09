@@ -118,7 +118,7 @@ const Tabs = () => {
         }}
       />
       <Tab.Screen
-        name="AddForm"
+        name="Add your Post"
         component={AddForm}
         options={{
           tabBarIcon: ({ focused }) => (
