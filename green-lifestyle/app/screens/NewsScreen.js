@@ -48,11 +48,6 @@ const NewsScreen = ({ navigation }) => {
     getNewsFromAPI();
   }, []);
 
-  /* const newsResponse = async() => {
-        const response = await newAPI.get('everything?q=tesla&from=2021-07-19&sortBy=publishedAt&apiKey=920deb9f754348c0bec4871fef36d971')
-        console.log(response.data)
-    } */
-
   function getNewsFromAPI() {
     newAPI
       .get("everything?q=climate&apiKey=0423f0a2118f4a778340ebbb260b712c")

@@ -52,7 +52,7 @@ export default function AddForm() {
             text: "",
             Photo: [],
             createdAt: new Date(),
-            username: user.displayName,
+            //username: user.displayName,
             upvotes: 0,
           }}
           onSubmit={(Values) => submitForm(Values)}
@@ -62,9 +62,9 @@ export default function AddForm() {
           <Field maxLength={255} name="title" placeholder="Post title" />
           <Field
             maxLength={500}
-            multiline
+            multiline={true}
             name="text"
-            numberOfLines={10}
+            numberOfLines={100}
             placeholder="Post text"
           />
           <Submit title="Submit" />

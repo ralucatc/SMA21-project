@@ -11,6 +11,7 @@ import NewsScreen from "./app/screens/NewsScreen";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import AddForm from "./app/screens/AddForm";
 import { LogBox } from "react-native";
+import CommunityScreen from "./app/screens/CommunityScreen";
 
 const Stack = createStackNavigator();
 
@@ -52,11 +53,12 @@ function MyStack() {
 
 export default function App() {
   return (
-    <SafeAreaProvider>
-      <StatusBar barStyle="dark-content" backgroundColor="#6a51ae" />
-      <NavigationContainer>
-        <MyStack />
-      </NavigationContainer>
-    </SafeAreaProvider>
+    // <SafeAreaProvider>
+    //   <StatusBar barStyle="dark-content" backgroundColor="#6a51ae" />
+    //   <NavigationContainer>
+    //     <MyStack />
+    //   </NavigationContainer>
+    // </SafeAreaProvider>
+    <CommunityScreen></CommunityScreen>
   );
 }
